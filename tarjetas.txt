@@ -1,2 +1,4 @@
 MASTERCARD
 visa
+rapipago
+pagofacil
