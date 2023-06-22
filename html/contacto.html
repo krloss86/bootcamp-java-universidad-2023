@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--etiqueta semántica: html5-->
+<body>
+    <header>
+        <h1>Mundial Qatar - 2022</h1>
+    </header>
+    <nav>
+        <!--lista no ordenada-->
+        <ul>
+            <li>
+                <a href="#equipos">Equipos</a>
+            </li>
+            <li>
+                <a href="#grupos">Grupos</a>
+            </li>
+        </ul>
+    </nav>
+    <!--contenido ppal-->
+    <main>
+        <section>
+            <h3>Equipos </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellendus similique corrupti iure sed excepturi ullam nostrum illum beatae vero! Eos labore ipsam nam rerum a reiciendis quia sunt? Reiciendis.</p>
+        </section>
+        <section>
+            <h3>Grupos </h3>
+            <table>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
+                </tr>
+                <tr>
+                    
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!--formularios-->
+    <!--los datos viajan por defecto por GET -->
+    <fieldset>
+        <legend>Datos de Contacto</legend>
+        <form method="GET">
+            <!--INPUT varios tipo-->
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" 
+                    name="nombre" 
+                    id="nombre"
+                    required
+                    >
+            </div>
+            <!--INPUT varios tipo-->
+            <div>
+                <label for="nombre">Apodo:</label>
+                <input type="text" 
+                    name="apodo" 
+                    id="apodo"
+                    value="apodo"
+                    readonly
+                    >
+            </div>
+            
+            <div>
+                <label for="edad">Edad:</label>
+                <!--NUMBER-->
+                <input type="number" 
+                    id="edad"
+                    name="edad"
+                    min="0"
+                    max="99"
+                    required
+                    placeholder="11"
+                >
+            </div>
+            
+            <div>
+                <label for="edad">
+                    Obra social:
+                </label>
+                <!--es posible tildar varios usando el atributo multiple-->
+                <select name="obrasocial" required>
+                    <option></option>
+                    <option value="PAM">PAMI</option>
+                    <option value="osde">OSDE</option>
+                    <option value="swmec">SWISH MEDICAL</option>
+                </select>
+            </div>
+            
+            <div>
+                <label>
+                    Es Cliente:
+                </label>
+                <input type="radio" 
+                    name="escliente" 
+                    id="si"
+                    checked>
+                <label for="si">Si</label>
+                <input type="radio" 
+                    name="escliente" 
+                    id="no">
+                <label for="no">No</label>
+            </div>
+
+            <div>
+                <label>
+                    Intereses:
+                </label>
+                
+                <input type="checkbox" 
+                    name="musica" 
+                    id="musica"
+                    value="MUS">
+                <label for="musica">
+                    M&uacute;sica
+                </label>
+                
+                <input type="checkbox" 
+                    name="deportes"
+                    id="deportes"
+                    value="deportes">
+                <label for="deportes" 
+                    name="deportes">
+                    Deportes
+                </label>
+            </div>
+            <div>
+                <label>Fecha Nac:</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Horario:</label>
+                <input type="time">
+            </div>            
+            <div>
+                <label>Avatar</label>
+                <input type="file">
+            </div>
+
+            <!--range-->
+            <!--email-->
+            <!--password-->
+            <!--enviar valores ocultos a la vista-->
+            <input type="hidden" name="oculto" value="voculto">
+            <div>
+                <button>
+                    Enviar
+                </button>
+            </div>
+        </form>
+
+        <form>
+            <div>
+                <label>Username</label>
+                <input type="text" name="username">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="Password">
+            </div>
+            <div>
+                <button>
+                    Login
+                </button>
+            </div>
+        </form>
+    </fieldset>
+
+    <aside>
+        <!--interno-->
+        <!-- <iframe 
+            title="publicidad"
+            src="./publicidad.html"
+            width="200"
+            height="200"
+            ></iframe> -->
+        <!--externo-->
+        <iframe width="200" 
+            height="200" 
+            src="https://www.youtube.com/embed/mKz2yxxZoQQ" 
+            title="YouTube video player" 
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    <!-- videos-->
+    <video src="../assets/movie.mp4" autoplay controls muted></video>
+    <!-- audio-->
+    <audio src="../assets/horse.ogv" controls></audio>
+    </aside>
+    <footer>
+        <a href="./index.html">Volver</a>
+    </footer>
+</body>
+</html>
