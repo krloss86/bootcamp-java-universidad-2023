@@ -1,55 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
-/*variables en px*/
+
+/*defino las variables base*/
+:root {
+    /*fuentes*/
+    font-size: 10px; /*16px*/
+    --fuente-principal: 'Ubuntu', sans-serif;
+    --primary-color: hsla(216, 80%, 46%, 0.836);
+    --secoundary-color: hsl(289, 48%, 76%);
+    --white: #ffffff;
+    --black: hsl(289, 48%, 76%);
+    --green: #008000;
+
+    /*buttons*/
+    --btn-radius: 10px;
+    --btn-color: var(--primary-color);
+}
 
 * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: var(--fuente-principal);
     margin: 0;/*esto elimina a TODOS*/
     padding: 0;
 }
 
-header {
-    background-color: rgb(185, 222, 209);
-    height: 30vh;/*valor relativo al viewport*/
-    /* width: 98vw; */
-}
-
-h1 {
-    text-align: center;
-    color: cadetblue;
-    text-transform: capitalize;
-    /* font-weight: 700; */
-    /* font-size: 1.5em; */
-    text-shadow: 1px 1px 2px black;
-    text-decoration: underline;
-}
-
-img {
-    width: 50%;
-    height: auto;
+body {
+    margin: 10px;
+    /* background-color: var(--primary-color); */
 }
 
 .sec1 {
-    /*margin externo*/
-    margin-left: 5px;
-    margin-top: 10px;
-    background-color: bisque;
-
-    /*padding interno*/
-    padding-left: 10px;
-    padding-top: 20px;
+    border: 1px solid black;
+    padding: 2vw 5vh;
 }
-.sec1 h2 {
+
+.sec1 img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.sec1 h1{
     text-align: center;
-    color: blue;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    line-height: 1;
 }
 .sec1 p {
-    text-transform: lowercase;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    text-transform: capitalize;
 }
 
-.sec1 img {
-    margin: 0 auto;/*¿cómo centro una imagen?*/
+.btn {
+    display: inline-block;
+    width: 20vw;
+    height: 10vh;
+    border: 0;
+    border-radius: 10%;
+    font-size: 1.5rem;
 }
+.btn:hover {
+    font-size: 1.8rem;
+    background-color: black;
+}
+
+.btn-red {
+    background-color: red;
+}
+.btn-green {
+    background-color: var(--green);
+}
+
+.btn-container {
+    padding: 1vh;
+    text-align: center;
+}
+
+.sec1 .btn {
+    margin: auto;
+}
+
+#btn1{
+    border-radius: 0px !important;
+    background: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu {
+    /* background-color: aqua; */
+    margin-bottom: 2vh;
+}
+.menu ul {
+    font-size: 2rem;
+    text-align: center;
+}
+.menu li {
+    list-style: none;
+    display: inline-block;
+    height: 8vh;
+    width: 20vw;
+    border: 1px solid hsla(240, 100%, 50%, 0.687);
+    text-align: center;
+    padding-top: 2vh;
+    border-radius: 10px;
+}
+.menu li a {
+    color:#008000;
+    /* margin-top: 2vh; */
+    text-decoration: none;
+    /* line-height: 10px; */
+}
+
+.item:hover {
+    background-color: aquamarine;
+}
+
+.item a:visited{
+    color:#008000;
+} 
+.item a:active {
+    color:#008000;
+} 
+
+/*selectores*/
+/*hijo*/
+section p > strong {
+    color: red
+}
+
+/*hermano adyacente*/
+#sec_3 h3 + p {
+    font-size: 3rem;
+}
+
+/*hermanos generales*/
+#sec_4 h3 ~ h5 {
+    font-size: 3rem !important;
+}
+
+/*selectores de atributo*/
+a[data-mio='bla'] {
+    color:blue !important;
+}
+a[href$='com'] {
+    color:red !important;
+}
+a[href^='https'] {
+    color:greenyellow !important;
+}
+a[href~='pe'] {
+    color: brown !important;
+}
+/*
+= igual a
+$ termina en 
+~
+* contiene
+|
+^ comience con
+*/
