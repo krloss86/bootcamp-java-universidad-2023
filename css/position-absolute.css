@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+
+/*variables*/
+:root {
+    --cuadrado: 400px;
+    --alto-cuadrado: 250px;
+    --cirulo: 150px;
+    --fuente-principal: 'Ubuntu', sans-serif;
+    --primary-color: #386A20;
+    --secondary-color: #55624C;
+    --tertiary-color: #19686A;
+    --white: #ffffff;
+
+    /*buttons*/
+    --button-border-default: 30px;
+    --button-default-width: 70px;
+    --button-default-height: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+.profile-container {
+    margin: 0 auto;
+    width: var(--cuadrado);
+}
+.container {
+    width: var(--cuadrado);
+    height: var(--alto-cuadrado);
+    /* background-color: blue; */
+    position: relative;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    margin: 1vh;
+}
+
+.container h1 {
+    color: var(--primary-color);
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.container h3 {
+    color: var(--secondary-color);
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.container p {
+    color: var(--tertiary-color);
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.circulo {
+    width: var(--cirulo);
+    height: var(--cirulo);
+    border-radius: 50%;
+    background-color: rgb(72, 183, 62);
+    position: absolute;
+    right: 20px;
+    top: calc(var(--alto-cuadrado) - var(--cirulo) / 2 ) ;
+
+    /*imagen de fondo*/
+    background-image: url('../assets/male.webp');
+    background-size: contain; /*auto|contain|cover*/
+}
+
+.profile-img {
+    width: inherit;/*hereda el valor de contenedor*/
+    height: inherit;
+    border-radius: 50%;
+}
+/*
+.circulo img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+*/
+.btn {
+    border-radius: var(--button-border-default);
+    width: var(--button-default-width);
+    height: var(--button-default-height) ;
+    border: none;
+    margin: 20px 10px;
+    font-size: .6rem;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+/*TODO*/
+.btn-start {
+    background-image: url('../assets/start-v2.png');
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border: 0;
+}
+
+.btn-start:hover {
+    border: 2px solid gray;
+}
