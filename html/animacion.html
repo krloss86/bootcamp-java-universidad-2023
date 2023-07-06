@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animación</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .circulo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+
+            /*animacion*/
+            position: relative; /*relative ?*/
+
+            animation-name: mianimacion;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            
+            /*velocidad*/
+            animation-timing-function: linear;
+
+            /*cuantas veces quiero repetir*/
+            animation-iteration-count: 1;
+        }
+
+        @keyframes mianimacion {
+            /*aca va la magia de la animacion*/
+            /*inicio de la animacion*/
+            0% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+            25% {
+                left:300px;
+                top: 0;
+                background-color: green;
+            }
+            50% {
+                left:300px;
+                top:300px;
+                background-color: blue;
+            }
+            75% {
+                left:0;
+                top:300px;
+                background-color: yellow;
+            }
+            100% {
+                left: 0;
+                top: 0;
+                background-color: blueviolet;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="circulo"></div>
+</body>
+</html>

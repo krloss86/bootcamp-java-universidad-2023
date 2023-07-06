@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap');
+/*
+    NO
+    - sasss
+    - less
+    - scss
+*/  
+/*selector universal*/  
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+/*regla css*/
+body {
+    /* font-family: 'Ubuntu', sans-serif; */
+    background-color: #6a5353;
+    /* font-size: 10px; */
+}
+/*selector de etiqueta*/
+p {
+    color: white;  
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: 700;
+    /* font-size: 3em; */
+    /*tamaño de fuente*/  
+}
+
+/*selector por id*/
+#miparrafo {
+    color:aqua
+}
+/*selector por clase*/
+.miparrafo {
+    color:rgb(50, 139, 71);
+    /*16px tamaño por defecto */
+    font-size: 35px;  
+}
+/*inline > porId > etiqueta > class*/
