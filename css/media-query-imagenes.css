@@ -1,0 +1,28 @@
+@media screen and (min-width:1px) and (max-width:576px){
+    .img {
+        /*cambiar la imagen*/
+        background-image: url('https://picsum.photos/id/237/200/100');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px){
+    .img {
+        /*cambiar la imagen*/
+        background-image: url('https://picsum.photos/id/239/200/100');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 350px;
+    }
+}
+@media screen and (min-width:769px){
+    .img {
+        /*cambiar la imagen*/
+        background-image: url('https://picsum.photos/id/240/200/100');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+}
