@@ -48,16 +48,16 @@ while(i>=0) {
 }
 */
 //do-while
-let i=N;
+let i = N;
 do {
-    if(i > 0 && i%2 === 0){
+    if (i > 0 && i % 2 === 0) {
         console.log(i);
         cantidadPares++;
     }
     i--;
-}while(i >=0);
+} while (i >= 0);
 //ejercicio!!!
 
 /*mostrar los N primeros número pares */
 /*contar cuanto pares hay*/
-console.log('cantidadPares',cantidadPares);
+console.log('cantidadPares', cantidadPares);
